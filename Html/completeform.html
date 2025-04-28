@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Job Application Form</title>
+
+
+    <style>
+        body{
+         font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+        }
+        form{
+             background: #ea7f7f;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 500px;
+        }
+        h2{
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    input[type="date"],
+    input[type="file"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #000000;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    p {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 6px;
+      background-color: #4CAF50;
+      color: rgb(4, 12, 255);
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button[type="reset"] {
+      background-color: #f44336;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    button[type="reset"]:hover {
+      background-color: #d32f2f;
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <form action="/submit-application" method="POST">
+
+        <!-- Text input -->
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+        <!-- Email input -->
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <!-- Phone input -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required><br><br>
+
+        <!-- Password input -->
+        <label for="password">Create Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Create a strong password" required><br><br>
+
+        <!-- Date input -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- File input -->
+        <label for="resume">Upload Resume (PDF):</label><br>
+        <input type="file" id="resume" name="resume" accept=".pdf" required><br><br>
+
+        <!-- Radio input -->
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br><br>
+
+        <!-- Checkbox input -->
+        <p>Skills:</p>
+        <input type="checkbox" id="html" name="skills" value="HTML">
+        <label for="html">HTML</label><br>
+
+        <input type="checkbox" id="css" name="skills" value="CSS">
+        <label for="css">CSS</label><br>
+
+        <input type="checkbox" id="js" name="skills" value="JavaScript">
+        <label for="js">JavaScript</label><br><br>
+
+        <!-- Select input -->
+        <label for="position">Position Applying For:</label><br>
+        <select id="position" name="position" required>
+            <option value="">--Select Position--</option>
+            <option value="frontend">Frontend Developer</option>
+            <option value="backend">Backend Developer</option>
+            <option value="fullstack">Full Stack Developer</option>
+            <option value="designer">UI/UX Designer</option>
+        </select><br><br>
+
+        <!-- Textarea input -->
+        <label for="about">About Yourself:</label><br>
+        <textarea id="about" name="about" rows="5" cols="30" placeholder="Tell us something about you..."
+            required></textarea><br><br>
+
+        <!-- Submit and Reset buttons -->
+        <button type="submit">Submit Application</button>
+        <button type="reset">Reset Form</button>
+
+    </form>
+
+</body>
+
+</html>
