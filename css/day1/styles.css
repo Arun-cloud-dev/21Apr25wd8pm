@@ -1,0 +1,39 @@
+/* 
+p{
+    color: blue;
+
+}
+.a1{
+
+    background-color: rgb(0, 255, 0);
+}
+
+.er{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+.re{
+    color: red;
+ 
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Sigmar&family=Tagesschrift&display=swap');
+
+
+
+*{
+    margin: 0px;
+    color: yellow;
+
+        font-family: "Sigmar", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+}
+
+
+
+p{
+    color: blue;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+}
