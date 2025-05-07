@@ -1,0 +1,64 @@
+h1, div {
+    color: blue;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+input[type="password"] {
+   border: 6px solid #ff0000;
+}
+
+
+
+a[target="_blank"] {
+    color: red;
+}
+
+input:focus{
+    border: 5px solid blue;
+}
+
+button:hover{
+    background-color: yellow;
+}
+
+
+li:nth-child(2n+1){
+    background-color: #ccc;
+}
+
+
+
+.ar::before{
+    content: 'Quote: ';
+    font-weight: bold;
+    color: red;
+    font-size: 24px;
+}
+
+.ar::after{
+    content: " - Author";
+    font-weight: bold;
+    color: rgb(182, 182, 182);
+    font-size: 12px;
+}
+
+.ans::before{
+    content: 'Answer: sdfsdf ';
+
+}
+.ans::after{
+    content: " 12 ";
+    font-weight: bold;
+    color: CMYK(1, 0, 0.8324, 0.298);
+    font-size: 12px;
+}
+
+
+.ans {
+border: solid 4px green;
+padding: 4%;
+
+}
