@@ -1,0 +1,20 @@
+.box1{
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    box-sizing: content-box;
+    background-color: lightblue;
+}
+
+.box2{
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    box-sizing: border-box;
+    background-color: rgb(0, 255, 200);
+}
+
+h1{
+    color:hsl(100%, 100%, 50%)
+}
+
