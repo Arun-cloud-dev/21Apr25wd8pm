@@ -1,0 +1,88 @@
+.static-box{
+    position: static;
+    border: 2px solid green;
+}
+/* .relative-box{
+    position: relative;
+    border: 2px solid blue;
+    top: 40px;
+    left: 40px;
+} */
+
+
+.parent{
+    position: relative;
+    border: 2px solid red;
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+}
+
+.absolute-box{
+    position: absolute;
+    border: 2px solid blue;
+    top: 40px;
+    left: 40px;
+}
+
+
+.child2{
+    position: relative;
+    border: 2px solid blue;
+    top: 90px;
+    left: 70px;
+    width: 100px;
+    height: 100px;
+
+}
+
+.fixed-box{
+    position: fixed;
+    border: 2px solid blue;
+    bottom: 0px;
+    left: 40px;
+}
+
+.sticky-heading{
+    position: sticky;
+    top: 30px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    padding: 10px;
+}
+
+
+.box1, .box2 ,.box3,.box4,.box5{
+position: absolute;
+top: 60px;
+left: 20px;
+width: 100px;
+height: 100px;
+background-color: lightcoral;
+}
+.box1{
+    background-color: rgb(0, 144, 192);
+    z-index: 0;
+    margin-left: 60px;
+    
+}
+.box2{
+    background-color: lightgreen;
+    z-index: 2;
+    margin-left: 20px;
+}
+.box3{
+    background-color: rgb(252, 132, 150);
+    z-index: 3;
+    margin-left: 30px;
+}
+.box4{
+    background-color: rgb(255, 255, 80);
+    z-index: 1;
+
+}
+.box5{
+    background-color: rgb(123, 123, 123);
+    z-index: 4;
+    margin-left: 40px;
+}
