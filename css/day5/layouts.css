@@ -1,0 +1,101 @@
+h1{
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    line-height: 5.5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 1000;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    border: 2px solid blue;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 5.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+
+}
+
+
+.navbar {
+  background-color: #888888;
+  padding: 50px;
+
+}
+
+.logo{
+
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+}
+
+.menu a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+
+
+.block-message {
+    display: block;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+}
+/* .menu a{
+    display: inline-block;
+    color: white;
+    padding: 8px 12px ;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+ */
