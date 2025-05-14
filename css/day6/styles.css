@@ -1,0 +1,49 @@
+.box {
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+    background-color: lightsalmon;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.flex-container {
+
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    align-items: center;
+    height: 30px;
+
+
+}
+
+.item{
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 20px;
+
+}
+
+.self-end{
+    align-self:stretch;
+    justify-content: space-around;
+    background-color: lightgreen;
+}
