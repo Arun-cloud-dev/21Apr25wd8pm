@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px 1fr 40px;
+    grid-template-areas:
+        "ar ar"
+        "sidebar content"
+        "footer footer";
+    gap: 10px;
+    height: 100vh;
+    padding: 10px;
+    background-color: #838383;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: stretch;
+    align-content: stretch;
+}
+.item {
+    background-color: bisque;
+    color: #ff0000;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+
+}
+
+.header{
+    grid-area: ar;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(235, 255, 83);
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+
+.menu{
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 40px;
+
+}
+.logo{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.menu a{
+margin-left: 40px;
+text-decoration: none;
+color: purple;
+font-weight: 500;
+font-size: 20px;
+}
+
+.menu a:hover{
+    color: blue;
+    font-weight: 700;
+}
+
+
+.sidebar{
+
+    grid-area: sidebar;
+    background-color: aqua;
+}
+.sidebar ul {
+    list-style-type: none;
+}
+.sidebar ul li{
+    padding: 10px;
+    margin: 5px;
+    background-color: lightblue;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.sidebar ul li:hover{
+    background-color: lightgreen;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+.sidebar ul li a:hover{
+    color: blue;
+    font-weight: 700;
+}
+
+
+
+.content{
+    grid-area: content;
+ 
+    background-color: rgb(0, 148, 198);
+}
+
+.content h1{
+    margin-bottom: 50px;
+}
+.footer{
+    grid-area: footer;
+    text-align: center;
+    background-color: rgb(235, 255, 83);
+    color: black;
+    padding: 20px;
+   height: 50px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
