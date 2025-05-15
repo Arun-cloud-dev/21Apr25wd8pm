@@ -142,3 +142,150 @@ font-size: 20px;
 }
 
 
+@media (max-width:768px){
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+            "ar"
+            "sidebar"
+            "content"
+            "footer";
+    }
+    .header{
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        background-color: rgb(235, 255, 83);
+        color: black;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .menu a{
+        margin-left: 20px;
+        font-size: 18px;
+    }
+    .sidebar{
+        padding: 10px;
+        background-color: aqua;
+    }
+    .sidebar ul li{
+        padding: 5px;
+        margin: 2px;
+        font-size: 16px;
+    }
+    .sidebar ul li:hover{
+        background-color: lightgreen;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .sidebar ul li a{
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .sidebar ul li a:hover{
+        color: blue;
+        font-weight: 700;
+    }
+    .content{
+        padding: 10px;
+        background-color: rgb(91, 214, 255);
+    }
+    .content h1{
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    .footer{
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        background-color: rgb(235, 255, 83);
+        color: black;
+        font-size: 18px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .footer p{
+        margin: 0;
+        font-size: 16px;
+    }
+    .footer a{
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .footer a:hover{
+        color: blue;
+        font-weight: 700;
+    }
+    .footer p:hover{
+        color: blue;
+        font-weight: 700;
+    }
+    .footer p a:hover{
+        color: blue;
+        font-weight: 700;
+    }
+    .footer p a{
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+
+
+/* Mobile Responsive Styles */
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "content"
+      "footer";
+    padding: 5px;
+    gap: 5px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+  
+
+  .menu {
+    margin-top: 8px;
+  }
+
+  .menu a {
+    display: block;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .sidebar, .content, .footer {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+  .content h1{
+    font-size: 20px;
+    color: yellow;
+  }
+}
