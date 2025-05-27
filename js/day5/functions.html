@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Examples </title>
+</head>
+<body>
+    <h1>Function </h1>
+
+    <input type="text" id="username" placeholder="Enter your name">
+
+    <button onclick="greetUser()">Greet me</button>
+
+
+    <p id="greeting"></p>
+
+
+
+    <script>
+        const greetUser = () => {
+            const name = document.getElementById("username").value;
+            const greetingMessage = "Hello, " + name + "! Welcome to our website.";
+            document.getElementById("greeting").innerText = greetingMessage;
+
+
+
+       // if (name) {
+            //     greetingElement.textContent = `Hello, ${name}!`;
+            // } else {
+            //     greetingElement.textContent = "Please enter your name.";
+            // }
+            // document.getElementById("greeting").textContent = name ? `Hello, ${name}!` : "Please enter your name.";
+        }
+    </script>
+
+
+</body>
+</html>

@@ -19,17 +19,22 @@
 // console.log("Product is :" , multiply(5, 10));
 
 
-
-
 // function greet(name, calback) {
-//     console.log("Hello " + name + "!");
-//     calback();
+//   console.log("Hello " + name + "!");
+//   calback();
 // }
 
-
 // function farewell() {
-//     console.log("Goodbye!");
+//   console.log("Goodbye!");
 // }
 
 // greet("Alice", farewell);
+
+
+// iife
+
+// (function (){
+//     document.getElementById("message").innerHTML = "Hello, Welcome to our website! ";
+// })
+
 
