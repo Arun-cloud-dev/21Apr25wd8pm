@@ -43,18 +43,18 @@
 //   }
 
 
-let company = [
-  [
-    // Dept 1
-    ["John", "Developer"],
-    ["Jane", "Designer"],
-  ],
-  [
-    // Dept 2
-    ["Mark", "Manager"],
-    ["Mary", "HR"],
-  ],
-];
+// let company = [
+//   [
+//     // Dept 1
+//     ["John", "Developer"],
+//     ["Jane", "Designer"],
+//   ],
+//   [
+//     // Dept 2
+//     ["Mark", "Manager"],
+//     ["Mary", "HR"],
+//   ],
+// ];
 
 
 // for (let i = 0; i < company.length; i++) {
@@ -67,10 +67,50 @@ let company = [
 
 
 
-company.forEach(function (department) {
-    department.forEach(function (employee) {
-        employee.forEach(function (detail) {
-            console.log(detail);
-        })
-    })
+// company.forEach(function (department) {
+//     department.forEach(function (employee) {
+//         employee.forEach(function (detail) {
+//             console.log(detail);
+//         })
+//     })
+// });
+
+
+
+const fruits = [
+  ["Apple", "Banana", "Cherry"],
+  ["Orange", "Grapes", "Mango"],
+  ["Pineapple", "Strawberry", "Blueberry"]
+];
+
+
+
+
+
+// fruits[2][1].forEach(function (fruit, index) {
+//   console.log(index + ": " + fruit);
+// });
+
+
+
+// 0: s
+// 1: t
+// 2: r
+// 3: a
+// 4: w
+// 5: b
+// 6: e
+// 7: r
+// 8: r
+// 9: y
+
+
+fruits[2][1].split("").forEach(function (char, index) {
+  console.log(index + ": " + char);
 });
+
+
+
+
+
+
