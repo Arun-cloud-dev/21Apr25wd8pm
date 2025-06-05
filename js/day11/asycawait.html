@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Async/Await with Delay</title>
+</head>
+
+<body>
+    <h2>GitHub Followers (Loaded after 3 seconds)</h2>
+    <button onclick="showData()">Load Followers</button>
+    <ul id="followersList"></ul>
+
+    <script>
+        // Function to simulate 3-second delay
+        function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve,ms ));
+        }
+
+        // Async function to fetch GitHub API data
+        async function getData() {
+            const response = await fetch("https://api.github.com/users/Arun-cloud-dev/followers");
+            if (!response.ok) {
+                throw new Error("Failed to fetch followers");
+            }
+            const data = await response.json();
+            return data;
+        }
+
+        // Show data after delay
+        async function showData() {
+            document.getElementById("followersList").innerHTML = "<li>Loading...</li>";
+            await delay(3000); // Wait 3 seconds
+            try {
+                const followers = await getData();
+                const list = document.getElementById("followersList");
+                list.innerHTML = ""; // Clear loading
+                followers.forEach(follower => {
+                    const li = document.createElement("li");
+                    li.textContent = follower.login;
+                    list.appendChild(li);
+                });
+            } catch (err) {
+                document.getElementById("followersList").innerHTML = `<li>${err.message}</li>`;
+            }
+        }
+    </script>
+</body>
+
+</html>

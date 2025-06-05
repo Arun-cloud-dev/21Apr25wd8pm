@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GitHub Followers</title>
+</head>
+
+<body>
+    <h2>GitHub Followers</h2>
+    <button onclick="loadFollowers()">Load Followers</button>
+    <ul id="followersList"></ul>
+
+    <script>
+        function fetchFollowers() {
+            return new Promise((resolve, reject) => {
+                fetch("https://api.github.com/users/Arun-cloud-dev/followers")
+                    .then(response => {
+                        if (!response.ok) {
+                            reject("Failed to fetch followers.");
+                        }
+                        return response.json();
+                    })
+                    .then(data => resolve(data))
+                    .catch(error => reject("Network error: " + error));
+            });
+        }
+
+        function loadFollowers() {
+            fetchFollowers()
+                .then(followers => {
+                    const list = document.getElementById("followersList");
+                    list.innerHTML = ""; // Clear existing list
+                    followers.forEach(follower => {
+                        const li = document.createElement("li");
+                        li.textContent = follower.login;
+                        list.appendChild(li);
+                    });
+                })
+                .catch(err => {
+                    document.getElementById("followersList").innerHTML = `<li>${err}</li>`;
+                });
+        }
+    </script>
+</body>
+
+</html>
