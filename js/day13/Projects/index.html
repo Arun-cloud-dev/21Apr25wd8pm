@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Js</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form JS</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
-       
+    <div class="form-container">
+        <h1>Basic Form Validation</h1>
+        <form id="myForm" onsubmit="return false">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
 
-<div class="form-container">
-    <h1>Basic form Validation </h1>
-<form action="">
-    <label for="name">Name :</label>
-    <input type="text" name="name" id="name">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" />
 
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" />
 
-    <label for="email">Email:</label>
-    <input type="text" name="email" id="email">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" />
 
-    <label for="password">Password:</label>
-    <input type="password" name="password" id="password">
+            <button id="submit">Submit</button>
 
-    <label for="confirmPassword">Confirm Password:</label>
-    <input type="password" name="confirmPassword" id="confirmPassword">
-
-    <button id="submit">Submit</button>
-    <p id="error" style="color: red;"></p>
-    <p id="success" style="color: green;"></p>
-    <p id="loading" style="color: blue;"></p>
-    <p id="result"></p>
-
-</form>
-</div>
-
-
-       
+            <p id="error"></p>
+            <p id="success"></p>
+            <p id="loading"></p>
+            <p id="result"></p>
+        </form>
+    </div>
 
 
 
-        <script src="./formvalidation.js"></script>
+
+
+
+    <script src="./formvalidation.js"></script>
 </body>
+
 </html>

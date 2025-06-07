@@ -9,40 +9,28 @@ document.getElementById("submit").addEventListener("click", function () {
   const loading = document.getElementById("loading");
   const result = document.getElementById("result");
 
-  // Clear previous error messages
-
+  // Clear only success, loading, and result
   success.textContent = "";
   loading.textContent = "";
   result.textContent = "";
-    
-  
-    // keep error visible untill next valid
-    error.textContent = "";
-    
 
+  // Keep previous error until replaced by new one or successful submit
+  error.textContent = "";
 
-    // Validate form fields
-  if (
-    name === "" ||
-    email === "" ||
-    password === "" ||
-    confirmPassword === ""
-  ) {
+  // Validations
+  if (!name || !email || !password || !confirmPassword) {
     error.textContent = "All fields are required!";
     return;
   }
 
-    // Validate email format
-  const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
   if (!email.match(emailPattern)) {
     error.textContent = "Invalid email format!";
     return;
   }
 
-    
-    // Validate password length and match
   if (password.length < 6) {
-    error.textContent = "Password must be at least 6 characters long!";
+    error.textContent = "Password must be at least 6 characters!";
     return;
   }
 
@@ -51,17 +39,15 @@ document.getElementById("submit").addEventListener("click", function () {
     return;
   }
 
-    // Simulate form submission
+  // If all validations pass
+  error.textContent = "";
   loading.textContent = "Submitting...";
 
-    
-    // Simulate a delay for form submission
   setTimeout(() => {
     loading.textContent = "";
     success.textContent = "Form submitted successfully!";
-
     result.innerHTML = `
         <strong>Name:</strong> ${name}<br>
-        <strong>Email:</strong> ${email}<br>`;
+        <strong>Email:</strong> ${email}`;
   }, 2000);
-})
+});
